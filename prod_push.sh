@@ -7,4 +7,4 @@ read -p 'Commit message: ' message
 
 git commit -m "$message"
 git push origin master
-git subtree push --prefix dist front gh-pages
+git subtree push --prefix dist origin gh-pages
