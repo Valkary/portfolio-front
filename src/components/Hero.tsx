@@ -33,13 +33,13 @@ export default function Hero({ }: Props) {
         <section id="hero" className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden snap-center">
             <HeroBackground />
             <img
-                src="/profile_pic.jpg"
+                src="/portfolio-front/profile_pic.jpg"
                 alt="profile picture"
                 className="relative rounded-full h-32 w-32 mx-auto object-cover"
             />
             <div>
                 <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[10px]">Software Developer</h2>
-                <h1 className={`flex justify-center text-3xl md:text-5xl lg:text-6xl font-semibold px-10`}>
+                <h1 className="flex justify-center text-3xl md:text-5xl lg:text-6xl font-semibold px-10">
                     {loopCount === 2 && <span>{"<"}</span>}
                     <span className={`${loopCount === 2 && "text-blue-300"}`}>{text}</span>
                     {loopCount === 2 && <span>{"/>"}</span>}
