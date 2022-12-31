@@ -1,0 +1,54 @@
+---
+import HeroText from "./HeroText";
+import HeroBackground from "./HeroBackground";
+---
+
+<section
+    id="hero"
+    class="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden snap-center"
+>
+    <HeroBackground client:load />
+    <img
+        src="/portfolio-front/profile_pic.jpg"
+        alt="profile picture"
+        class="relative rounded-full h-32 w-32 mx-auto object-cover"
+    />
+    <HeroText client:load />
+    <div class="z-20">
+        <a href="#about">
+            <button
+                class="px-6 py-2 border border-[#242424] rounded-full text-xs uppercase tracking-widest text-gray-500 transition-all hover:border-[#f43f5e]/40 hover:text-[#f43f5e]"
+            >
+                About
+            </button>
+        </a>
+        <a href="#experience">
+            <button
+                class="px-6 py-2 border border-[#242424] rounded-full text-xs uppercase tracking-widest text-gray-500 transition-all hover:border-[#f43f5e]/40 hover:text-[#f43f5e]"
+            >
+                Exerience
+            </button>
+        </a>
+        <a href="#tech">
+            <button
+                class="px-6 py-2 border border-[#242424] rounded-full text-xs uppercase tracking-widest text-gray-500 transition-all hover:border-[#f43f5e]/40 hover:text-[#f43f5e]"
+            >
+                Skills
+            </button>
+        </a>
+        <a href="#projects">
+            <button
+                class="px-6 py-2 border border-[#242424] rounded-full text-xs uppercase tracking-widest text-gray-500 transition-all hover:border-[#f43f5e]/40 hover:text-[#f43f5e]"
+            >
+                Projects
+            </button>
+        </a>
+        <a href="/blog">
+            <button
+                class="px-6 py-2 border border-[#242424] rounded-full text-xs uppercase tracking-widest text-gray-500 transition-all hover:border-[#f43f5e]/40 hover:text-[#f43f5e]"
+            >
+                Blog
+            </button>
+        </a>
+    </div>
+</section>
