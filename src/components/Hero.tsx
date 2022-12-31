@@ -33,7 +33,7 @@ export default function Hero({ }: Props) {
         <section id="hero" className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden snap-center">
             <HeroBackground />
             <img
-                src="/profile_pic.jpg"
+                src="/portfolio-front/profile_pic.jpg"
                 alt="profile picture"
                 className="relative rounded-full h-32 w-32 mx-auto object-cover"
             />
