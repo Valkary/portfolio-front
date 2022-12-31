@@ -46,7 +46,7 @@ export default function Hero({ }: Props) {
                     <Cursor cursorColor="#f43f5e" />
                 </h1>
             </div>
-            <div className="z-20">
+            <div className="z-20 flex flex-row flex-wrap gap-5 justify-center">
                 <a href="#about">
                     <button
                         className="px-6 py-2 border border-[#242424] rounded-full text-xs uppercase tracking-widest text-gray-500 transition-all hover:border-[#f43f5e]/40 hover:text-[#f43f5e]"
