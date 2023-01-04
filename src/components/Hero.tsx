@@ -61,7 +61,7 @@ export default function Hero({ }: Props) {
                         Exerience
                     </button>
                 </a>
-                <a href="#tech">
+                <a href="#skills">
                     <button
                         className="px-6 py-2 border border-[#242424] rounded-full text-xs uppercase tracking-widest text-gray-500 transition-all hover:border-[#f43f5e]/40 hover:text-[#f43f5e]"
                     >
