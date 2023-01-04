@@ -20,18 +20,18 @@ type Props = {};
 const size = 80;
 
 const skills = [
-    { icon: <ReactOriginalIcon size={size} />, experience: "" },
-    { icon: <MysqlPlainIcon size={size} />, experience: "" },
-    { icon: <NodejsPlainIcon size={size} />, experience: "" },
-    { icon: <TypescriptPlainIcon size={size} />, experience: "" },
-    { icon: <TailwindcssPlainIcon size={size} />, experience: "" },
-    { icon: <PhpPlainIcon size={size} />, experience: "" },
-    { icon: <JavascriptPlainIcon size={size} />, experience: "" },
-    { icon: <Html5PlainIcon size={size} />, experience: "" },
-    { icon: <Css3PlainIcon size={size} />, experience: "" },
-    { icon: <VscodePlainIcon size={size} />, experience: "" },
-    { icon: <NextjsOriginalWordmarkIcon size={size} color="white" />, experience: "" },
-    { icon: <RustPlainIcon size={size} color={"#CC5500"} />, experience: "" }
+    { icon: <ReactOriginalIcon size={size} />, experience: "2 years" },
+    { icon: <MysqlPlainIcon size={size} />, experience: "4 years" },
+    { icon: <NodejsPlainIcon size={size} />, experience: "3 years" },
+    { icon: <TypescriptPlainIcon size={size} />, experience: "1.5 years" },
+    { icon: <TailwindcssPlainIcon size={size} />, experience: "1.5 years" },
+    { icon: <PhpPlainIcon size={size} />, experience: "1 year" },
+    { icon: <JavascriptPlainIcon size={size} />, experience: "5 years" },
+    { icon: <Html5PlainIcon size={size} />, experience: "5 years" },
+    { icon: <Css3PlainIcon size={size} />, experience: "5 years" },
+    { icon: <VscodePlainIcon size={size} />, experience: "4 years" },
+    { icon: <NextjsOriginalWordmarkIcon size={size} color="white" />, experience: "2 years" },
+    { icon: <RustPlainIcon size={size} color={"#CC5500"} />, experience: "> 1 year" }
 ];
 
 export default function Skills({ }: Props) {
