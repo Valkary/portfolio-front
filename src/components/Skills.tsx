@@ -36,7 +36,7 @@ const skills = [
 
 export default function Skills({ }: Props) {
     return (
-        <section id="skills" className="w-full h-screen snap-mandatory snap-center flex flex-col items-center">
+        <section id="skills" className="w-full min-h-screen snap-mandatory snap-center flex flex-col items-center">
             <h3 className="md:mb-0 mb-6 mt-24 uppercase tracking-[20px] text-gray-500 text-2xl">Skills</h3>
             <h3 className="mb-6 uppercase tracking-wide text-gray-600 text-md hidden md:inline-block">Hover over the skills to view the experience</h3>
             <div id="cards" className="grid md:grid-cols-3 grid-cols-2 justify-center m-auto gap-y-2 gap-x-6 md:gap-x-2">

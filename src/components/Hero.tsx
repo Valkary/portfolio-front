@@ -68,11 +68,11 @@ export default function Hero({ }: Props) {
                         Skills
                     </button>
                 </a>
-                <a href="#projects">
+                <a href="#contact">
                     <button
                         className="px-6 py-2 border border-[#242424] rounded-full text-xs uppercase tracking-widest text-gray-500 transition-all hover:border-[#f43f5e]/40 hover:text-[#f43f5e]"
                     >
-                        Projects
+                        Contact
                     </button>
                 </a>
                 <a href="/blog">
