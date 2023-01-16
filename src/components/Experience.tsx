@@ -44,13 +44,13 @@ const cardInformation = [
         activities: [
             "Developed a production control system REST API and WebSockets with Express",
             "Built a desktop app using Tauri and React to visualize the production",
-            "Coded an arduino Wifi Module connection with the web socket in order to have real time updates of the mini-factory" 
+            "Coded an arduino Wifi Module connection with the web socket in order to have real time updates of the mini-factory"
         ]
     },
     {
         company: "AuralMx",
         acronym: "AuralMx",
-        company_logo: "",
+        company_logo: "/portfolio-front/aural_logo.png",
         position: "Fullstack web developer",
         date: "Aug 2020 - Aug 2021",
         tech: [
@@ -69,7 +69,7 @@ const cardInformation = [
     {
         company: "Transformadora de Hules y Plásticos",
         acronym: "THP",
-        company_logo: "",
+        company_logo: "/portfolio-front/thp_logo.png",
         position: "App Developer",
         date: "Dec 2022 - Present",
         tech: [

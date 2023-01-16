@@ -521,6 +521,7 @@ __metadata:
     "@astrojs/image": ^0.12.1
     "@astrojs/react": ^1.2.2
     "@astrojs/tailwind": ^2.1.3
+    "@heroicons/react": ^2.0.13
     "@types/react": ^18.0.21
     "@types/react-dom": ^18.0.6
     astro: ^1.8.0
@@ -528,6 +529,7 @@ __metadata:
     react: ^18.0.0
     react-devicons: ^2.14.0
     react-dom: ^18.0.0
+    react-hook-form: ^7.42.1
     react-simple-typewriter: ^5.0.1
     react-social-icons: ^5.15.0
     tailwindcss: ^3.0.24
@@ -538,6 +540,15 @@ __metadata:
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
   checksum: 4059f790e2d07bf3c3ff3e0fec0daa8144fe35c1f6e0111c9921bd32106adaa97a4ab096ad7dab1e28ee6a9060083c4d1a4ada42a7f5f3f7a96b8812e2b757c1
+  languageName: node
+  linkType: hard
+
+"@heroicons/react@npm:^2.0.13":
+  version: 2.0.13
+  resolution: "@heroicons/react@npm:2.0.13"
+  peerDependencies:
+    react: ">= 16"
+  checksum: f03c393a129cb468d103e4334815df956d7afa9d0756ee09b33e9396214d39b786523a5e650709de73c68ba085facda3fe01984ff137bcc16c85d4ed2498e663
   languageName: node
   linkType: hard
 
@@ -4555,6 +4566,15 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
   checksum: 7d323310bea3a91be2965f9468d552f201b1c27891e45ddc2d6b8f717680c95a75ae0bc1e3f5cf41472446a2589a75aed4483aee8169287909fcd59ad149e8cc
+  languageName: node
+  linkType: hard
+
+"react-hook-form@npm:^7.42.1":
+  version: 7.42.1
+  resolution: "react-hook-form@npm:7.42.1"
+  peerDependencies:
+    react: ^16.8.0 || ^17 || ^18
+  checksum: f0dcf5d7f6f90b4ba5efe58ce14b7adda6f2327c80c444df259c31d8bc785e823c9ec77c27a4f1db5bef70992235ae420acd190b1c767bec2c7fb8d11d639880
   languageName: node
   linkType: hard
 

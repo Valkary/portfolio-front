@@ -25,9 +25,9 @@ export default function ExperienceCard({ cardContent }: Props) {
                 snap-center bg-[#292929] p-10 rounded-lg gap-5
                 "
         >
-            <div className="w-full h-1/6 flex flex-row justify-center">
+            <div className="w-full h-1/6 flex flex-row justify-center mb-5">
                 <img
-                    className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
+                    className="h-full rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
                     loading="lazy"
                     alt={company}
                     src={company_logo}

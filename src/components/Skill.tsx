@@ -27,12 +27,12 @@ export default function Skill({ icon, experience, name }: Props) {
             });
         } else {
             nameControls.start({
-                y: 100,
+                y: '300%',
                 opacity: 0
             });
 
             experienceControls.start({
-                y: -100,
+                y: '-300%',
                 opacity: 0
             });
 
