@@ -29,20 +29,20 @@ export default function Contact({ }: Props) {
                         onSubmit={handleSubmit(onSubmit)}
                         className="w-full mx-auto flex flex-col items-center xl:w-2/3 gap-2 z-20"
                     >
-                        <div className="w-full flex justify-center gap-2">
+                        <div className="w-full flex flex-col md:flex-row items-center md:justify-center gap-2">
                             <input
                                 type="text"
                                 placeholder="Name"
                                 defaultValue={""}
                                 {...register("name", { required: true })}
-                                className={`${input_classes} ${errors.name && "border border-red-600"}`}
+                                className={`${input_classes} w-full ${errors.name && "border border-red-600"}`}
                             />
                             <input
                                 type="text"
                                 placeholder="Last name"
                                 defaultValue={""}
                                 {...register("last_names")}
-                                className={input_classes}
+                                className={`${input_classes} w-full`}
                             />
                         </div>
                         <div className="w-full flex justify-center gap-1">
