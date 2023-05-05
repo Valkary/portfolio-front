@@ -86,8 +86,21 @@ const code = `
           </tbody>
         </table>
       )
-    }
-\n\n`;
+    }`;
+
+const border_code = `
+  function selectedCellBorders(start_row: number, start_col: number, end_row: number, end_col: number, cell_row: number, cell_col: number): string {
+    let border_str = "";
+
+    if (start_col === end_col && start_col === cell_col) { border_str += "border-x-4 " }
+    if (cell_row === start_row) border_str += "border-t-4 ";
+    if (cell_row === end_row) border_str += "border-b-4 ";
+    if (cell_col === start_col) border_str += "border-l-4 ";
+    if (cell_col === end_col) border_str += "border-r-4 ";
+
+    return border_str;
+  }
+`;
 ---
 
 <BlogLayout title="Blog">
@@ -118,6 +131,9 @@ const code = `
         <Code lang="js" code={code} theme="dark-plus" wrap />
       </div>
       <Grid rows={15} cols={25} client:load />
+      <div class="max-h-[70vh] overflow-y-scroll">
+        <Code lang="js" code={border_code} theme="dark-plus" wrap />
+      </div>
     </div>
   </section>
 </BlogLayout>
