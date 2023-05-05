@@ -1,4 +1,6 @@
+import { useEffect, useState } from "react";
 import type { SelectedCells } from "./Grid";
+import CellInput from "./CellInput";
 
 type Props = {
   col: number,
@@ -41,17 +43,33 @@ function isCellSelected(selectedCells: SelectedCells, row: number, col: number) 
 }
 
 export default function Cell({ col, row, selectCells, selectedCells }: Props) {
+  const [focused, setFocused] = useState(false);
   const [isSelected, borders] = isCellSelected(selectedCells, row, col);
+
+  console.log(focused);
+
+  useEffect(() => {
+    if (selectedCells.start?.row === row && selectedCells.start.col === col) {
+      setFocused(true);
+    } else {
+      setFocused(false);
+    }
+  }, [selectedCells]);
 
   return (
     <td
       key={`${row}-${col}`}
       className={
-        `min-w-[50px] min-h-[20px] w-8 h-6 cursor-pointer hover:bg-gray-500/95 border-2 border-black
-        ${isSelected ? `bg-blue-200 ${borders} border-dotted border-blue-900` : "bg-white"}`
+        `
+        min-w-[50px] min-h-[20px] w-8 h-6 cursor-pointer border-2 border-black
+        ${focused ? "bg-white border-solid border-black border-4" : ""}
+        ${isSelected ? `bg-blue-200 ${borders} ${!focused && "border-dotted border-blue-900"}` : "bg-white"}
+        `
       }
       onClick={() => selectCells(row, col)}
+      onDoubleClick={() => setFocused(true)}
     >
+      <CellInput focused={focused} />
     </td>
   );
 }
