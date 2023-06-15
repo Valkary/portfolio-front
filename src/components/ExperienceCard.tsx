@@ -17,10 +17,10 @@ export default function ExperienceCard({ cardContent }: Props) {
     const { company, acronym, company_logo, position, date, tech, activities } = cardContent;
 
     return (
-        <div className="md:container">
-            <div className="border bg-cyan-900 bg-opacity-25 rounded-lg p-6 text-gray-100 relative z-10">
+        <div className="md:container my-auto md:my-0">
+            <div className="bg-opacity-25 rounded-lg p-6 text-gray-100 relative z-10">
                 <div className="flex flex-wrap items-center">
-                    <div className="flex w-full h-48 md:h-64 lg:h-72 relative">                        
+                    <div className="flex w-full h-32">                        
                         
 
                     </div>
@@ -52,10 +52,15 @@ export default function ExperienceCard({ cardContent }: Props) {
 
                         <div className="w-full flex justify-center">
                             <a
-                                className="w-1/2 h-full flex flex-row justify-center items-center text-xl py-3 rounded-md bg-red-500"
+                                className="w-1/2 h-full mt-5 flex flex-row justify-center items-center text-xl py-3 rounded-md border-2 bg-transparent border-gray-600 text-white"
                                 href="#"
                             >
-                                Code
+                                <GithubOriginalIcon color="gray"size={30} />
+                                <p className="mx-5">
+                                    {"<"}
+                                    <span className="text-blue-300">Code</span>
+                                    {"/>"}
+                                </p>
                             </a>
                         </div>
                     </div>

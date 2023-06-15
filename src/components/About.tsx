@@ -45,7 +45,7 @@ export default function About({ }: Props) {
                         <h4 className="text-4xl font-semibold">Who am I?</h4>
                     </div>
                     <p className="text-xl text-justify">
-                        Hi! I'm Pepe Salcedo and I am a fullstack web developer located in México. I started coding when I was about 11 years old with Ruby, but quickly switched
+                        Hello there! I'm Pepe Salcedo and I am a fullstack web developer located in México. I started coding when I was about 11 years old with Ruby, but quickly switched
                         to JavaScript and eventually React, TypeScript and many other technologies. I have a passion for learning new tech and that's the reason why I'm currently
                         learning Rust and deepening my knowledge in the React and Node ecosystems. I am very keen on <span className="text-blue-300">{text}</span>{<Cursor cursorColor="#f43f5e" />}
                         apps and keep learning in the process :D.
