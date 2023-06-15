@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { GithubOriginalIcon } from "react-devicons";
 
 type Props = {
     cardContent: {
@@ -16,43 +17,50 @@ export default function ExperienceCard({ cardContent }: Props) {
     const { company, acronym, company_logo, position, date, tech, activities } = cardContent;
 
     return (
-        <motion.article
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1.2 }}
-            className="
-                w-full h-full md:w-2/3 xl:w-[45%] overflow-y-hidden flex flex-col items-center flex-shrink-0 mt-5 
-                snap-center bg-[#292929] p-10 rounded-lg gap-5
-                "
-        >
-            <div className="w-full h-1/6 flex flex-row justify-center mb-5">
-                <img
-                    className="h-full rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
-                    loading="lazy"
-                    alt={company}
-                    src={company_logo}
-                />
-            </div>
+        <div className="md:container">
+            <div className="border bg-cyan-900 bg-opacity-25 rounded-lg p-6 text-gray-100 relative z-10">
+                <div className="flex flex-wrap items-center">
+                    <div className="flex w-full h-48 md:h-64 lg:h-72 relative">                        
+                        
 
-            <div className="flex flex-col items-start w-full h-1/3">
-                <h4 className="text-3xl font-light">{position}</h4>
-                <p className="font-bold text-xl mt-1 text-gray-500">{acronym}</p>
+                    </div>
+                    <div className="w-full pt-8 flex flex-col justify-between">
+                        <div>
+                            <h2 className="font-bold text-2xl uppercase tracking-wide">{position}</h2>
+                            <p className="uppercase text-gray-500">{date}</p>
+                            <div className="flex flex-wrap text-center pt-4 mb-2 gap-2">
+                                {tech.map((element, idx) =>
+                                    <div key={idx}>
+                                        {element}
+                                    </div>
+                                )}
+                            </div>
 
-                <div className="flex flex-row gap-3 justify-start my-2">
-                    {tech.map((element, idx) =>
-                        <div key={idx}>
-                            {element}
+                            <p className="text-xs leading-relaxed text-gray-50">
+                                This revolutionary
+                                email design kit is going to transform the way in which you send
+                                modern emails.
+                            </p>
+
+                            <ul className="text-xs mt-4 list-disc list-inside text-gray-50 leading-relaxed">
+                                <li>Responsive</li>
+                                <li> Mobile-friendly</li>
+                                <li> Media queries</li>
+                                <li> 20MB of JavaScript</li>
+                            </ul>
                         </div>
-                    )}
-                </div>
-                <p className="uppercase py-5 text-gray-500">{date}</p>
-            </div>
 
-            <div className="h-1/2 overflow-y-scroll">
-                <ul className="list-disc space-y-4 ml-5 text-lg">
-                    {activities.map((act, idx) => <li key={idx}>{act}</li>)}
-                </ul>
+                        <div className="w-full flex justify-center">
+                            <a
+                                className="w-1/2 h-full flex flex-row justify-center items-center text-xl py-3 rounded-md bg-red-500"
+                                href="#"
+                            >
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </motion.article>
+        </div>
     );
 }

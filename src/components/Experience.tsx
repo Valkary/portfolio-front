@@ -86,16 +86,21 @@ const cardInformation = [
 
 export default function Experience({ }: Props) {
     return (
-        <section id="experience" className="snap-center">
+        <section id="experience" className="snap-center min-h-screen max-w-7xl mx-[10%] flex flex-col">
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.2 }}
-                className="w-screen h-fit md:h-screen flex overflow-hidden flex-col text-left max-w-full px-10 justify-evenly mx-auto items-center"
+                className="w-full h-full flex overflow-x-hidden flex-col items-center"
             >
-                <h3 className="mt-24 mb-6 uppercase tracking-[20px] text-gray-500 text-2xl">Experience</h3>
+                <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl mt-20 mb-12">Experience</h3>
 
-                <div className="w-full h-full flex md:overflow-y-hidden flex-col md:flex-row md:space-x-5 overflow-x-scroll md:p-10 snap-mandatory">
+                <div
+                    className="
+                        w-full h-full max-w-7xl
+                        md:grid md:grid-cols-2 md:gap-5
+                    "
+                >
                     {cardInformation.map((card, idx) => <ExperienceCard cardContent={card} key={idx} />)}
                 </div>
             </motion.div>
