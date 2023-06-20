@@ -71,7 +71,7 @@ export default function Experience({ }: Props) {
         >
             <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">About me</h3>
 
-            <div className="w-screen flex flex-col items-center md:flex-row space-x-5 overflow-x-hidden p-10 snap-both snap-mandatory">
+            <div className="w-screen md:mt-36 flex flex-col items-center md:flex-row space-x-5 overflow-x-hidden p-10 snap-both snap-mandatory">
                 {cardInformation(35).map((card, idx) => <ExperienceCard cardContent={card} key={idx} />)}
             </div>
         </motion.section>
