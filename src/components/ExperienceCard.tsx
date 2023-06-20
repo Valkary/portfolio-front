@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { GithubOriginalIcon } from "react-devicons";
 
 type Props = {
@@ -9,7 +8,7 @@ type Props = {
         position: string;
         date: string;
         tech: JSX.Element[];
-        activities: string[];
+        activities: string;
     }
 };
 
@@ -17,55 +16,23 @@ export default function ExperienceCard({ cardContent }: Props) {
     const { company, acronym, company_logo, position, date, tech, activities } = cardContent;
 
     return (
-        <div className="md:container my-auto md:my-0">
-            <div className="bg-opacity-25 rounded-lg p-6 text-gray-100 relative z-10">
-                <div className="flex flex-wrap items-center">
-                    <div className="flex w-full h-32">                        
-                        
+        <article className="h-screen md:h-full rounded-lg space-y-7 flex-shrink-0 flex flex-col items-center justify-center w-[500px] md:w-[600px]xl:w-[900px] snap-center">
+            <img
+                className="w-fit h-16 md:h-24 xl:h-[150px] object-cover object-center my-2"
+                src={company_logo}
+                alt={acronym}
+                loading="lazy"
+            />
 
-                    </div>
-                    <div className="w-full pt-8 flex flex-col justify-between">
-                        <div>
-                            <h2 className="font-bold text-2xl uppercase tracking-wide">{position}</h2>
-                            <p className="uppercase text-gray-500">{date}</p>
-                            <div className="flex flex-wrap text-center pt-4 mb-2 gap-2">
-                                {tech.map((element, idx) =>
-                                    <div key={idx}>
-                                        {element}
-                                    </div>
-                                )}
-                            </div>
-
-                            <p className="text-xs leading-relaxed text-gray-50">
-                                This revolutionary
-                                email design kit is going to transform the way in which you send
-                                modern emails.
-                            </p>
-
-                            <ul className="text-xs mt-4 list-disc list-inside text-gray-50 leading-relaxed">
-                                <li>Responsive</li>
-                                <li> Mobile-friendly</li>
-                                <li> Media queries</li>
-                                <li> 20MB of JavaScript</li>
-                            </ul>
-                        </div>
-
-                        <div className="w-full flex justify-center">
-                            <a
-                                className="w-1/2 h-full mt-5 flex flex-row justify-center items-center text-xl py-3 rounded-md border-2 bg-transparent border-gray-600 text-white"
-                                href="#"
-                            >
-                                <GithubOriginalIcon color="gray"size={30} />
-                                <p className="mx-5">
-                                    {"<"}
-                                    <span className="text-blue-300">Code</span>
-                                    {"/>"}
-                                </p>
-                            </a>
-                        </div>
-                    </div>
+            <div className="px-0 md:px-10">
+                <h4 className="text-4xl font-light uppercase">{position}</h4>
+                <p className="font-bold text-2xl mt-1 uppercase">{company}</p>
+                <div className="flex flex-row gap-2 items-center">
+                    {tech.map((t, id) => <div className="h-full flex items-center" key={id}>{t}</div>)}
                 </div>
+                <p className="text-lg">{activities}</p>
+                <p className="font-bold text-lg tracking-wider text-gray-500 uppercase">{date}</p>
             </div>
-        </div>
+        </article>
     );
 }

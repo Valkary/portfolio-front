@@ -30,7 +30,7 @@ export default function Hero({ }: Props) {
     }, [count.isDelete]);
 
     return (
-        <section id="hero" className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden snap-center">
+        <section id="hero" className="h-screen w-full flex flex-col space-y-8 items-center justify-center text-center overflow-hidden snap-center font-bold">
             <HeroBackground />
             <img
                 src="/portfolio-front/profile_pic.jpg"
@@ -68,20 +68,13 @@ export default function Hero({ }: Props) {
                         Skills
                     </button>
                 </a>
-                <a href="#contact">
+                {/* <a href="#contact">
                     <button
                         className="px-6 py-2 border border-[#242424] rounded-full text-xs uppercase tracking-widest text-gray-500 transition-all hover:border-[#f43f5e]/40 hover:text-[#f43f5e]"
                     >
                         Contact
                     </button>
-                </a>
-                <a href="/portfolio-front/blog/">
-                    <button
-                        className="px-6 py-2 border border-[#242424] rounded-full text-xs uppercase tracking-widest text-gray-500 transition-all hover:border-[#f43f5e]/40 hover:text-[#f43f5e]"
-                    >
-                        Blog
-                    </button>
-                </a>
+                </a> */}
             </div>
         </section>
     )

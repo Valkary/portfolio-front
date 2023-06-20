@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Header() {
     return (
-        <header className="sticky top-0 p-5 bg-transparent flex flex-row items-start justify-between w-full max-w-7xl mx-auto z-20 xl:justify-center-center">
+        <header className="top-0 p-5 sticky bg-transparent flex flex-row items-start justify-between w-full max-w-7xl mx-auto z-20 xl:justify-center-center">
             <motion.div
                 initial={{
                     x: -500,
@@ -24,7 +24,7 @@ export default function Header() {
                 <SocialIcon url="https://twitter.com/ElPepotles" fgColor="gray" bgColor="transparent" />
                 <SocialIcon url="https://www.instagram.com/pepe.salcedouribe/" fgColor="gray" bgColor="transparent" />
             </motion.div>
-            <motion.div
+            <motion.a
                 initial={{
                     x: 500,
                     opacity: 0,
@@ -39,10 +39,11 @@ export default function Header() {
                     duration: 0.7,
                 }}
                 className="flex flex-row items-center text-gray-300 cursor-pointer"
+                href = "mailto: jose.salcedouribe2002@gmail.com"
             >
                 <SocialIcon network="email" fgColor="gray" bgColor="transparent" />
                 <p className="uppercase hidden md:inline-flex text-sm text-gray-400">Contact me!</p>
-            </motion.div>
+            </motion.a>
         </header>
     )
 }

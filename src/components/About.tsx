@@ -16,9 +16,9 @@ export default function About({ }: Props) {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
             id="about"
-            className="snap-center min-h-screen text-center max-w-7xl mx-[10%] flex flex-col"
+            className="snap-center h-screen overflow-hidden flex flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center relative"
         >
-            <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl mt-20 mb-12">About me</h3>
+            <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">About me</h3>
 
             <div className="md:text-left md:flex-row flex flex-col items-center">
                 <motion.img
