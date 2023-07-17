@@ -30,7 +30,7 @@ export default function Hero({ }: Props) {
     }, [count.isDelete]);
 
     return (
-        <section id="hero" className="h-screen w-full flex flex-col space-y-8 items-center justify-center text-center overflow-hidden snap-center font-bold">
+        <section id="hero" className="min-h-screen w-full flex flex-col space-y-8 items-center justify-center text-center overflow-hidden snap-center font-bold">
             <HeroBackground />
             <img
                 src="/portfolio-front/profile_pic.jpg"

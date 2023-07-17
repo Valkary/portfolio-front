@@ -64,14 +64,14 @@ export default function Experience({ }: Props) {
     return (
         <motion.section
             id="experience"
-            className="snap-center md:h-screen overflow-x-hidden flex flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center relative"
+            className="snap-center overflow-x-hidden flex flex-col text-left px-10 max-w-full justify-evenly mx-auto items-center relative pt-20"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.2 }}
         >
-            <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">About me</h3>
+            <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl">My work</h3>
 
-            <div className="w-screen md:mt-36 flex flex-col items-center md:flex-row space-x-5 overflow-x-hidden p-10 snap-both snap-mandatory">
+            <div className="w-screen md:mt-36 flex flex-col items-center space-x-5 p-10 snap-both snap-mandatory">
                 {cardInformation(35).map((card, idx) => <ExperienceCard cardContent={card} key={idx} />)}
             </div>
         </motion.section>

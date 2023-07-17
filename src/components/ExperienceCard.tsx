@@ -1,5 +1,3 @@
-import { GithubOriginalIcon } from "react-devicons";
-
 type Props = {
     cardContent: {
         company: string;
@@ -16,7 +14,7 @@ export default function ExperienceCard({ cardContent }: Props) {
     const { company, acronym, company_logo, position, date, tech, activities } = cardContent;
 
     return (
-        <article className="h-screen md:h-full rounded-lg space-y-7 flex-shrink-0 flex flex-col items-center justify-center w-[500px] md:w-[600px]xl:w-[900px] snap-center">
+        <article className="h-screen md:h-full rounded-lg space-y-7 flex-shrink-0 flex flex-col items-center justify-center w-full md:w-[600px] xl:w-[900px] snap-center">
             <img
                 className="w-fit h-16 md:h-24 xl:h-[150px] object-cover object-center my-2"
                 src={company_logo}
